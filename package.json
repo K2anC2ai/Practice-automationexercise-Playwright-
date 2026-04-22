@@ -1,0 +1,18 @@
+{
+  "name": "automationexercise-tests",
+  "version": "1.0.0",
+  "description": "Senior-level Playwright E2E + API test suite for automationexercise.com",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:api": "playwright test tests/api.spec.ts --project=chromium",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.0"
+  }
+}
